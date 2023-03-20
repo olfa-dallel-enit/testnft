@@ -1,0 +1,7 @@
+syntax = "proto3";
+package testnft.testnft;
+
+option go_package = "testnft/x/testnft/types";
+
+// Msg defines the Msg service.
+service Msg {}

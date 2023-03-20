@@ -1,0 +1,12 @@
+syntax = "proto3";
+package testnft.testnft;
+
+import "gogoproto/gogo.proto";
+import "testnft/testnft/params.proto";
+
+option go_package = "testnft/x/testnft/types";
+
+// GenesisState defines the testnft module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}
